@@ -3,10 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>This is my fourth post.</title>
-		<meta name="description" content="This is a post on My Blog about touchpoints and circling wagons.">
+		<title>Pseudocode!</title>
+		<meta name="description" content="All about pseudocode yo.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Jed blog test">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Jed blog test">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.css">
 		
 		<style>/**
  * okaidia theme for JavaScript, CSS and HTML
@@ -22,7 +23,7 @@ pre[class*="language-"] {
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 1em;
 	text-align: left;
-	white-space: pre;
+	white-space: pre-wrap;
 	word-spacing: normal;
 	word-break: normal;
 	word-wrap: normal;
@@ -242,7 +243,7 @@ body {
 	height: 1px;
 	overflow: hidden;
 	position: absolute;
-	white-space: nowrap;
+	white-space: pre-wrap;
 	width: 1px;
 }
 
@@ -313,7 +314,7 @@ pre:not([class*="language-"]) {
 	hyphens: none;
 	direction: ltr;
 	text-align: left;
-	white-space: pre;
+	white-space: pre-wrap;
 	word-spacing: normal;
 	word-break: normal;
 }
@@ -465,18 +466,61 @@ h2 + .header-anchor {
 
 		<main id="skip">
 			
-<h1>This is my fourth post.</h1>
+<h1>This is going to have some pseudocode in it.</h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2018-09-30">30 September 2018</time></li>
+	<li><time datetime="2018-09-30">12 June 2023</time></li>
 	<li><a href="/tags/second-tag/" class="post-tag">second tag</a></li>
 </ul>
 
-<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-<p><picture><source type="image/avif" srcset="/img/IdthKOzqFA-350.avif 350w"><source type="image/webp" srcset="/img/IdthKOzqFA-350.webp 350w"><img alt="A possum parent and two possum kids hanging from the iconic red balloon" loading="lazy" decoding="async" src="/img/IdthKOzqFA-350.png" width="350" height="685"></picture></p>
-<h2 id="section-header" tabindex="-1">Section Header <a class="header-anchor" href="#section-header">#</a></h2>
-<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+<p>
+	Here's an example of pseudocode for a reading list.
+	<pre>
+	  <code class="language-javascript">
+bookList = [
+{
+  title: "Animal Farm",
+  author: "George Orwell",
+  read: true
+},
+{
+  title: "The Condition of the Working Class in England",
+  author: "Friedrich Engels",
+  read: false
+}
+]
+
+for each book in bookList {
+log book.title + " by " + book.author
+
+if book.read is true {
+  log "You've read'" + book.title + " by " + book.author
+} else {
+  log "You really need to read " + book.title + " by " + book.author
+}
+}
+</code>
+</pre>
+</p>
+<p>
+	Here's an example of pseudocode for a recipe.
+	<pre>
+		<code class="language-javascript">
+recipe = {
+recipeTitle: "Gnocchi with Pesto",
+servings: 2,
+ingredients: ["gnocchi", "pesto sauce", "Parmesan cheese", "pine nuts"],
+directions: "1. Cook gnocchi according to package instructions, approx 2 minutes in boiling water.\n2. Drain and cover with a dollop of pesto.\n3. Add olives and spinach.\n4. Serve with grated Parmesan cheese and toasted pine nuts."
+}
+
+log recipe.recipeTitle
+
+for each ingredient in recipe.ingredients {
+log ingredient
+}
+	  </code>
+	</pre>
+  </p>
 
 <ul class="links-nextprev"><li>Previous: <a href="/blog/thirdpost/">This is my third post.</a></li>
 </ul>
@@ -486,5 +530,7 @@ h2 + .header-anchor {
 		<footer></footer>
 
 		<!-- Current page: /blog/fourthpost/ -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-javascript.min.js"></script>
 	</body>
 </html>
